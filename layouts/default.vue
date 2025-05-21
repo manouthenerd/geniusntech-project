@@ -20,21 +20,22 @@
 
             <div class="min-[960px]:hidden">
                 <button id="menu-button">
-                    <Menu/>
+                    <Menu />
                 </button>
             </div>
         </nav>
     </header>
 
-    <main class="border mx-8 py-[1200px] bg-blue-100">
-        <div id="mobile-navbar" class="fixed top-[4.6rem] w-full h-[202px] min-[960px]:hidden min-h-10 p-2 bg-transparent backdrop-blur-lg font-medium border">
-            <div class="grid gap-2 space-x-2 items-center">
-                <NuxtLink class="text-[#025686] font-bold" to="/">Accueil</NuxtLink>
-                <NuxtLink class="hover:text-[#025686]" to="/about">À propos</NuxtLink>
-                <NuxtLink class="hover:text-[#025686]" to="/achievement">Nos réalisations</NuxtLink>
-                <NuxtLink class="hover:text-[#025686]" to="/services">Services</NuxtLink>
-                <NuxtLink class="hover:text-[#025686]" to="/team">Team Genius</NuxtLink>
-                <NuxtLink class="hover:text-[#025686]" to="/contact">Contactez-nous</NuxtLink>
+    <main class="mx-14 bg-[#fefefe] space-y-4">
+        <div id="mobile-navbar"
+            class="fixed w-[85%] h-[202px] min-[960px]:hidden min-h-10 px-[2rem] bg-[#0086c7] font-medium rounded-sm">
+            <div class="grid gap-2 space-x-2 p-2 items-center">
+                <NuxtLink class="text-[#fff] font-bold" to="/">Accueil</NuxtLink>
+                <NuxtLink class="hover:text-white" to="/about">À propos</NuxtLink>
+                <NuxtLink class="hover:text-white" to="/achievement">Nos réalisations</NuxtLink>
+                <NuxtLink class="hover:text-white" to="/services">Services</NuxtLink>
+                <NuxtLink class="hover:text-white" to="/team">Team Genius</NuxtLink>
+                <NuxtLink class="hover:text-white" to="/contact">Contactez-nous</NuxtLink>
             </div>
         </div>
 
@@ -80,20 +81,19 @@
     </footer>
 </template>
 
-<script setup lang="ts">
-import { toggleMenu } from '#imports';
+<script setup>
 
-onMounted( () => {
-    const menu = toggleMenu()
+onMounted(() => {
 
-    menu.toggleAction('#menu-button', '#mobile-navbar', 'open-mobile-navbar')
-    // let mobileNavbar = document.querySelector()
-    // let menuButton = document.querySelector()
+    let mobileNavbar = document.querySelector("#mobile-navbar")
+    let menuButton = document.querySelector("#menu-button")
 
-    // menuButton.addEventListener('click', () => {
-    //     mobileNavbar.classList.remove('top-[4.5rem]')
-    //     mobileNavbar?.classList.toggle()
-    // })
+    menuButton.addEventListener('click', () => {
+
+        mobileNavbar.classList.toggle("mobile-open")
+
+    })
+
 })
 
 </script>
@@ -115,18 +115,23 @@ div .uppercase {
 
 #mobile-navbar {
     transition: all .5s ease;
+    top: -250px;
+    box-shadow: 1px 1px 1px #bcbcbc;
 }
 
-
-.open-mobile-navbar {
-  overflow: hidden;
-  height: 0px;
-  top: -144px;
+#mobile-navbar a {
+transition: all .3s ease;
 }
 
-main,
+.mobile-open {
+    top: 4.6rem !important;
+}
+
+body {
+    font-family: 'poppins', sans-serif !important;
+}
+
 footer {
     font-family: 'Lato', sans-serif !important;
 }
-
 </style>
