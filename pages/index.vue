@@ -1,11 +1,11 @@
 <template>
-    <section id="header-section" class="bg-blue-50 w-full h-full p-1">
+    <section id="header-section" class="bg-blue-50 w-full min-h-30 p-1">
         <div class="w-full min-h-100 text-white grid grid-cols-2">
             <div class="p-2 space-y-4 mt-8 h-full grid justify-between">
-                <h3 class="font-bold text-4xl rounded backdrop-blur-xl bg-transparent">
+                <h3 class="font-bold text-4xl rounded backdrop-blur-xl bg-transparent p-1">
                     Spécialiste <span class="text-[#068fcf]">Des <br>Nouvelles</span> Technologies
                 </h3>
-                <p class="text-[17px] p-1 font-medium rounded backdrop-blur-xl bg-transparent">
+                <p class="text-[14.5px] p-1 font-medium rounded backdrop-blur-xl bg-transparent">
                     Dans un monde ultra-connecté, sécuriser vos infrastructures n’est plus une option.
                     Genius Network Technology vous propose des solutions réseau et télécom sur mesure pour
                     protéger vos biens, vos données et vos équipes, en toute fiabilité.
@@ -48,22 +48,163 @@
             </div>
         </div>
 
-        <div class="space-y-4 p-2 mt-4">
-            <h2 class="text-xl font-semibold text-slate-400">Nos domaines d'expertises🛠️</h2>
+        <div class="space-y-4 p-2 mt-4 bg-[#8080800d]">
+            <div class="flex justify-between items-center">
+                <h2 class="text-xl font-semibold text-slate-400">Nos domaines d'expertises🛠️</h2>
+                <NuxtLink href="/services" class="text-[#068fcf] font-bold rounded text-center">
+                    Découvrir tous nos services <span></span>
+                </NuxtLink>
+            </div>
             <div class="w-full">
-                <ul class="grid grid-cols-3 grid-rows-2 w-full space-y-4 space-x-4 place-items-center">
-                    <li class="size-[200px] shadow-sm bg-[url('/images/bg_1.jpg')] bg-center bg-cover rounded-full"></li>
-                    <li class="size-[200px] shadow-sm bg-[url('/images/bg_1.jpg')] bg-center bg-cover rounded-full"></li>
-                    <li class="size-[200px] shadow-sm bg-[url('/images/bg_1.jpg')] bg-center bg-cover rounded-full"></li>
-                    <li class="size-[200px] shadow-sm bg-[url('/images/bg_1.jpg')] bg-center bg-cover rounded-full"></li>
-                    <li class="size-[200px] shadow-sm bg-[url('/images/bg_1.jpg')] bg-center bg-cover rounded-full"></li>
-                    <li class="size-[200px] shadow-sm bg-[url('/images/bg_1.jpg')] bg-center bg-cover rounded-full"></li>
+                <ul id="services" class="grid grid-cols-2 w-full space-y-4 space-x-4">
+
+                    <li class="grid grid-cols-2 gap-2 p-2 rounded bg-white shadow-sm max-h-auto">
+                        <div>
+                            <NuxtImg class="object-fit h-[136px] rounded" src="/images/electricity.png" />
+                        </div>
+                        <div class="text-white flex flex-col justify-around">
+                            <h3 class="text-slate-400">Electricité</h3>
+                            <p class="text-slate-600 w-full">
+                                De l’installation à la maintenance, nos techniciens sont à votre disposition.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="grid grid-cols-2 gap-2 p-2 rounded bg-white shadow-sm max-h-auto">
+                        <div>
+                            <NuxtImg class="object-fit h-[136px] rounded" src="/images/camera.png" />
+                        </div>
+                        <div class="text-white flex flex-col justify-around">
+                            <h3 class="text-slate-400">Vidéo surveillance</h3>
+                            <p class="text-slate-600 w-full">
+                                Garder un oeil sur les flux entrants et sortants de vos activités avec des
+                                outils et technologies de pointe.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="grid grid-cols-2 gap-2 p-2 rounded bg-white shadow-sm max-h-auto">
+                        <div>
+                            <NuxtImg class="object-fit h-[136px] rounded" src="/images/electronic.jpg" />
+                        </div>
+                        <div class="text-white flex flex-col justify-around">
+                            <h3 class="text-slate-400">Sécurité électronique</h3>
+                            <p class="text-slate-600 w-full">
+                                Opter pour une sécurité extrême pour vos systèmes électroniques pour la protections de
+                                vos biens.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="grid grid-cols-2 gap-2 p-2 rounded bg-white shadow-sm max-h-auto">
+                        <div>
+                            <NuxtImg class="object-fit h-[136px] rounded" src="/images/com.png" />
+                        </div>
+                        <div class="text-white flex flex-col justify-around">
+                            <h3 class="text-slate-400">Télécommunication</h3>
+                            <p class="text-slate-700 w-full">
+                                La technologie évoluée de communication indispensable à notre ère.
+                            </p>
+                        </div>
+                    </li>
+
                 </ul>
+            </div>
+        </div>
+
+        <div class="space-y-4 p-2 mt-4">
+            <h2 class="text-xl font-semibold text-slate-400">Ce qu'ils disent de nous📜</h2>
+            <div class="w-full">
+                <ul
+                    class="grid grid-cols-2 items-baseline justify-between rounded w-full space-y-4 space-x-4 bg-[#0A103E] p-2">
+
+                    <li
+                        class="rounded space-y-2 shadow shadow-[#000] border border-slate-300 bg-transparent backdrop-blur-lg text-white p-2 ">
+                        <div class="flex space-x-2">
+                            <p>
+                                <NuxtImg class="size-[45px] rounded-full" src="/images/profile.jpeg" />
+                            </p>
+                            <p>
+                                <span class="italic">Roland Bilé</span> <br>
+                                <span class="italic text-slate-200">Eléveur</span>
+                            </p>
+                        </div>
+                        <p class="italic bg-transparent backdrop-blur-2xl text-neutral-300">
+                            “J'ai été épaté par le professionnalisme et les compétences des agents de
+                            Genius. Je recommande leurs services.”
+                        </p>
+                    </li>
+
+                    <li
+                        class="rounded space-y-2 shadow shadow-[#000] border border-slate-300 bg-transparent backdrop-blur-lg text-white p-2 ">
+                        <div class="flex space-x-2">
+                            <p>
+                                <NuxtImg class="size-[45px] rounded-full" src="/images/girl.jpeg" />
+                            </p>
+                            <p>
+                                <span class="italic">Sandrine K.</span> <br>
+                                <span class="italic text-slate-200">Particulier</span>
+                            </p>
+                        </div>
+                        <p class="italic bg-transparent backdrop-blur-2xl text-neutral-300">
+                            “J'ai fait appel aux services de livraison de Genius Network Technology et j'ai été
+                            satisfaite du délai de livraison
+                            assez court.”
+                        </p>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="space-y-4 p-2 mt-4">
+            <h2 class="text-xl font-semibold text-slate-400">Une intervention impéccable, une confiance gagnée🫱🏾‍🫲🏾
+            </h2>
+            <div class="w-full">
+                <ul id="partners" class="flex gap-2 items-center">
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/22 mai 2025, 14_24_30.png" />
+                    </li>
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/ccci-ue.png" />
+                    </li>
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/centamin.png" />
+                    </li>
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/envol.png" />
+                    </li>
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/pdu.jpg" />
+                    </li>
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/seco.png" />
+                    </li>
+                    <li>
+                        <NuxtImg class="size-[150px] object-fit" src="/images/partners/uemoa.png" />
+                    </li>
+
+                </ul>
+
             </div>
         </div>
     </section>
 </template>
 
+<script setup lang="ts">
+import { NuxtImg } from '#components';
+
+const items = [
+    "/images/partners/22 mai 2025, 14_24_30.png",
+    "/images/partners/ccci-ue.png",
+    "/images/partners/centamin.png",
+    "/images/partners/envol.png",
+    "/images/partners/pdu.jpg",
+    "/images/partners/seco.png",
+    "/images/partners/uemoa.png",
+
+]
+</script>
 
 <style scoped>
 #header-section {
@@ -71,5 +212,13 @@
     background-position: top/right;
     background-size: cover;
     background-clip: padding-box;
+}
+
+#services {
+    align-items: last baseline;
+}
+
+#partners li img {
+    object-fit: contain;
 }
 </style>

@@ -117,6 +117,7 @@ div .uppercase {
     transition: all .5s ease;
     top: -250px;
     box-shadow: 1px 1px 1px #bcbcbc;
+    z-index: 2;
 }
 
 #mobile-navbar a {
