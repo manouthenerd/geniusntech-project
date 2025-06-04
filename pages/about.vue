@@ -3,14 +3,15 @@
         <h3 data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1000" class="text-center text-4xl">À propos de
             nous</h3>
         <p data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200" class="text-center">Valeurs - Mission -
-            Vision - Problématiques/solutions</p>
+            Vision - Problématiques/solutions
+        </p>
     </section>
 
     <section class="rounded shadow overflow-hidden shadow-slate-100 min-[730px]:mx-18 max-[730px]:mx-4 space-y-2">
         <div data-aos="fade-down" data-aos-duration="1000"
             class="bg-gradient-to-tr from-slate-50 via-blue-200 to-amber-50 text-black shadow shadow-slate-300 p-2 rounded space-y-2">
             <p class="text-slate-600">
-                <span class="font-bold  text-[#00689e]">Genius Network Technology</span> est une entreprise spécialisée
+                <span class="font-bold text-[#00689e]">Genius Network Technology</span> est une entreprise spécialisée
                 dans le domaine de la <span class="text-[#00689e]"> télécommunication, la radiocommunication,
                     sécurité électronique, domotique, informatique, bâtiment et travaux public, HTA/BTA/EP, agriculture,
                     transit import-export, divers</span>.
@@ -112,7 +113,7 @@
             <h3 class="text-xl font-semibold text-slate-400">Notre vision </h3>
             <div class="grid min-[1000px]:grid-cols-2 max-[1000px]:grid-cols-1 gap-8">
                 <div data-aos="flip-up" data-aos-duration="1000" data-aos-delay="1000" class="content-center">
-                    <NuxtImg class="rounded-sm h-full max-[1000px]:w-full" src="/images/vision.avif" />
+                    <NuxtImg class="rounded-sm h-full max-[1000px]:w-full" src="/images/vision.jpg" />
                 </div>
 
                 <div data-aos="fade-up" data-aos-duration="1000" data-aos-delay="1200"

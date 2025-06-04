@@ -48,7 +48,7 @@
             <div>
                 <p class="uppercase text-[#025686] font-bold">Localisation</p>
                 <ul>
-                    <li>Treichville Rue 21 Avenue 17</li>
+                    <li>Treichville Rue 17 Avenue 21</li>
                     <li>Avenue Ouezzin Coulibaly</li>
                 </ul>
             </div>

@@ -1,19 +1,19 @@
 <template>
     <section id="header-section" class="bg-blue-50 w-full min-h-30 p-1">
-        <div class="w-full min-h-100 overflow-hidden text-white grid min-[750px]:grid-cols-2">
-            <div class="p-2 space-y-4 min-[750px]:mt-8 h-full grid justify-between">
-                <h3 data-aos="fade-up" data-aos-duration="1700"
+        <div class="w-full min-h-150 overflow-hidden text-white grid min-[750px]:grid-cols-2">
+            <div class="p-4 space-y-4 min-[750px]:mt-8 h-full grid justify-between">
+                <h3 data-aos="fade-up" data-aos-duration="1200"
                     class="font-bold text-4xl rounded backdrop-blur-xl bg-transparent max-[750px]:backdrop-blur-none max-[750px]:bg-[#00000045] p-1">
                     Spécialiste <span class="text-[#068fcf]">Des <br>Nouvelles</span> Technologies
                 </h3>
-                <p data-aos="fade-up" data-aos-duration="1700" data-aos-delay="1000"
-                    class="text-[14.5px] p-1 font-medium rounded backdrop-blur-xl bg-transparent max-[750px]:backdrop-blur-none max-[750px]:bg-[#00000045]">
+                <p data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1000"
+                    class="text-[14.5px] p-2 font-medium rounded backdrop-blur-xl bg-transparent max-[750px]:backdrop-blur-none max-[750px]:bg-[#00000045]">
                     Dans un monde ultra-connecté, sécuriser vos infrastructures n’est plus une option.
                     Genius Network Technology vous propose des solutions réseau et télécom sur mesure pour
                     protéger vos biens, vos données et vos équipes, en toute fiabilité.
                 </p>
 
-                <div data-aos="fade-up" data-aos-duration="1700" data-aos-delay="1500">
+                <div data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500">
                     <button
                         class="bg-black text-white font-bold border border-black ring-1 ring-black ring-offset-2 rounded p-2 text-center">
                         Une idée de projet ? <span class="animate-pulse">📝</span>
